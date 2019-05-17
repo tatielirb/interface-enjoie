@@ -1,0 +1,25 @@
+{
+  "name": "enjoei-front-end-test",
+  "main": "server.js",
+  "scripts": {
+    "start": "gulp ",
+    "watch": "gulp ",
+    "dev": "gulp dev ",
+    "dist": "gulp dist "
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.3"
+  }
+}

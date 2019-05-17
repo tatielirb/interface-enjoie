@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />    
+    <title>Tatieli Ramos</title>
+
+</head>
+<body>
+	<main class="container">
+
+		<header>
+			<img src="img/logo-enjoie.png" alt="Logo Enjoie Store">
+		</header>
+
+		<section id="chechout">
+				
+				
+			<div class="procuct-img">
+				<img src="img/bluse.png" alt="Blusa Adidas">
+			</div>
+			<div class="cupom">
+				<h2>cupons</h2>
+
+				<form action="">
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="cupom" id="naoUsar" value="usarCupom" checked>
+					  <label class="form-check-label" for="naoUsar">
+					    não usar cupom
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="cupom" id="blackFriday" value="blackFriday">
+					  <label class="form-check-label" for="blackFriday">
+					    black friday
+					    <span> - R$ 12,00</span>
+					  </label>
+					</div>
+				</form>
+			</div>
+
+			<div class="infos-resumo">
+				<h2>resumo</h2>
+				<div class="valores">
+					<p>valor original</p>
+					<span>R$ 100,00</span>
+				</div>
+				<div class="valores">
+					<p>cupom</p>
+					<span id="valorDescon"> R$ 0,00</span>
+				</div>
+				<div class="valores">
+					<p>frete</p>
+					<span>R$ 20,00</span>
+				</div>
+				<div class="valores">
+					<p>total</p>
+					<span>R$ 108,00</span>
+				</div>
+			</div>
+			<div class="buttons-group">
+				<button class="cancelar" type="button" data-toggle="modal" data-target="#cancelar">cancelar</button>
+				<button class="confirmar" type="button" data-toggle="modal" data-target="#confirmar">conﬁrmar</button>
+			</div>
+		</section>
+	</main>
+
+
+	<div class="modal fade bd-example-modal-sm" id="cancelar" tabindex="-1" role="dialog" aria-labelledby="cancelar" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="car"><img src="img/car-store-red.png" alt="car red"></div>				
+				<h2>compra cancelada</h2>
+				<p>o pedido não foi enviado e você não será cobrado</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade bd-example-modal-sm" id="confirmar" tabindex="-1" role="dialog" aria-labelledby="modal confirmar" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="car"><img src="img/car-store-green.png" alt="car green"></div>			
+				<h2>compra conﬁrmada</h2>
+				<p>enviaremos atualizações sobre o pedido para o seu e-mail</p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</html>

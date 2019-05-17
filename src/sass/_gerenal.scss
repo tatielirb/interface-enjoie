@@ -1,0 +1,174 @@
+body, html {
+	font-family: 'Montserrat', sans-serif;
+	margin:0; 
+	height: 100%;
+	width: 100%;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 400;
+
+	#chechout {
+		width: 100%;
+		margin: 30px auto;
+
+    	@include breakpoint('desktop') { 
+    		width: 400px;
+    	}
+
+    	h2 {
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 35px;
+		}
+		.cupom {
+			form {
+				.form-check {
+					margin-bottom: 35px;
+					label {
+						font-size: 16px;
+						font-weight: 400;
+						display: inline;
+
+						span {
+							font-size: 16px;
+							font-weight: 400;
+							float: right;
+							display: inline-block;
+							color:$rose;
+						}
+					}
+				}
+			}
+		}
+		
+		
+		.valores {
+			margin-bottom: 35px;
+
+			p { 
+				font-size: 16px;
+				font-weight: 400;
+				display: inline-block;
+				
+			}
+
+			span {
+				font-size: 16px;
+				font-weight: 400;
+				float: right;
+				display: inline-block;
+
+				
+			}
+
+			&:nth-child(3){
+				span {	
+					color:$rose;
+				}
+			}
+
+			&:nth-child(5){
+				span{
+					font-weight: 600;
+				}
+			}
+
+		}
+
+		.procuct-img {
+			text-align: center;
+			width: 125px;
+			margin: 0 auto 35px;
+			border-radius: 8px;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.buttons-group{
+			border-top: 1px solid #f4f2f0;
+
+			button {
+				cursor: pointer;
+				position: relative;
+				box-sizing: border-box;
+			    display: inline-block;
+			    padding: 0 32px !important;
+			    height: 48px;
+			    vertical-align: middle;
+			    border-radius: 3px 3px 4px 4px !important;
+			    border: 1px solid #e4e1df;
+			    border-bottom-width: 3px;
+			    outline: 0;
+			    font-size: 16px  !important;
+			    font-weight: 600;
+			    text-align: center;
+			    -webkit-font-smoothing: antialiased;
+			    -webkit-appearance: none;
+			    transition: background 0.3s ease 0s, border-color 0.3s ease 0s, color 0.3s ease 0s, opacity 0.3s ease 0s;
+				text-align: center;
+				text-decoration: none;
+				overflow: hidden;
+				float: none;
+				@include transition(all 1s ease);
+				background: transparent;
+				margin: 0 auto 20px;
+				@include breakpoint('tablet') { 
+					margin: 0;
+					padding: 0 58px !important;
+				}
+				&.cancelar {
+					background: #ffffff;
+			 		background: $white;
+			 		color: $rose;
+				}
+				&.confirmar {
+					background:$rose ;
+			 		color: $white;
+			 		border-color: $rose-dark;
+				}
+			}			
+		}
+	}
+
+}
+
+.modal {
+	top: 180px;
+	.modal-content {
+		padding: 20px;
+		text-align: center;
+		.car {
+			width: 40px;
+			margin: 0 auto;
+			img {
+				width: 100%;
+				height: auto;
+
+			}
+		}
+		
+		h2 {
+			font-size: 18px;
+			font-weight: 500;
+			color: $black-silver;
+			margin: 30px 0 20px 0;
+		}
+
+		p {
+			font-size: 14px;
+			font-weight: 300;
+		}
+
+		#confirmar {
+
+		}
+
+		#cancelar {
+
+		}
+	}
+}
